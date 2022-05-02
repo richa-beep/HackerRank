@@ -26,4 +26,4 @@ HAVING challenge_counter IN (
             ) AS aux_table
     )
 ORDER BY challenge_counter DESC,
-    h.hacker_id ASC;
+    h.hacker_id;
