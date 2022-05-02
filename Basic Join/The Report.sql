@@ -1,0 +1,11 @@
+SELECT CASE
+        WHEN G.GRADE > 7 THEN S.NAME
+        ELSE NULL
+    END,
+    G.GRADE,
+    S.MARKS
+FROM STUDENTS AS S,
+    GRADES AS G
+WHERE S.Marks between G.Min_mark AND G.Max_mark
+ORDER BY G.GRADE DESC,
+    S.NAME;
