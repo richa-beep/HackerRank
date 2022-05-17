@@ -1,9 +1,0 @@
-SELECT S.NAME
-FROM(
-        STUDENTS S
-        JOIN FRIENDS F ON S.ID = F.ID
-        JOIN PACKAGES P1 ON S.ID = P1.ID
-        JOIN PACKAGES P2 ON F.FRIEND_ID = P2.ID
-    )
-WHERE P2.Salary > P1.Salary
-ORDER BY P2.Salary;
